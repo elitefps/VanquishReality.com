@@ -1,6 +1,11 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto+Condensed&display=swap');
+
+@font-face { font-family: Horsemen; src: url('Horsemen.otf'); } 
+@font-face { font-family: Horsemen; font-weight: bold; src: url('Horsemen.otf');}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Prompt:wght@500&family=Roboto+Condensed&display=swap');
 
 
 
@@ -37,6 +42,7 @@ nav {
   left: 0;
   background-color: rgb(2, 3, 7);
   z-index: 99;
+  font-family: "Oswald", sans-serif;
 }
 
 .nav__content {
@@ -46,6 +52,7 @@ nav {
   display: flex;
   align-items: left;
   justify-content: space-between;
+  font-family: "Oswald", sans-serif;
 }
 
 nav .logo a {
@@ -127,6 +134,8 @@ ul li a:hover {
   line-height: 3rem;
   color: white;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px black;
+  font-style: bold;
 }
 
 .title span {
