@@ -11,6 +11,29 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="about.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .typing-effect {
+        display: inline-block;
+        white-space: pre-wrap; /* Allow line breaks to be interpreted */
+        border-right: 0.15em solid orange;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        overflow: hidden;
+        width: 100%; /* Adjust as needed */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.25rem; /* Adjust as needed */
+        color: white;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: orange; }
+      }
+    </style>
     <title>Vanquish | #VNQSH2023</title>
   </head>
   <body>
@@ -32,10 +55,7 @@
       <div class="section__container">
         <div data-aos="fade-in" class="content">
           <p class="typing-effect">
-            Welcome to Vanquish.<br>
-            Vanquish is a Worldwide Content organisation located within the depths of gaming.<br>
-            Our goal? To home some of the best Players, content creators and personalities within the industry so that we can always provide our community with the finest gameplay,
-            content, events and results. With the help of yourself and our loyal fans, we look forward to seeing what we can accomplish hand in hand.
+            Welcome to Vanquish. Vanquish is a Worldwide Content organisation located within the depths of gaming. Our goal? To home some of the best players, content creators, and personalities within the industry so that we can always provide our community with the finest gameplay, content, events, and results. With the help of yourself and our loyal fans, we look forward to seeing what we can accomplish hand in hand.
           </p>
         </div>
       </div>
@@ -68,7 +88,7 @@
       function navigateToAbout() {
         window.location.href = "pages/about/about.html";
       }
-      
+
       // Typewriting effect
       document.addEventListener('DOMContentLoaded', function() {
         const textElement = document.querySelector('.typing-effect');
