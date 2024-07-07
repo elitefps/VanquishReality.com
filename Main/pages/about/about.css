@@ -194,6 +194,13 @@ ul li a:hover {
   border-radius: 100%;
 }
 
+.typing-effect {
+  white-space: pre-wrap; /* To preserve line breaks */
+  font-family: 'Roboto Condensed', sans-serif; /* Adjust the font as necessary */
+  font-size: 1.25rem; /* Adjust the font size as necessary */
+  color: white; /* Adjust text color as necessary */
+}
+
 .full-width-image {
   background-size: cover;
   background-position: center;
