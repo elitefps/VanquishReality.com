@@ -1,15 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto+Condensed&display=swap');
-
-@font-face { font-family: Horsemen; src: url('Horsemen.otf'); } 
-@font-face { font-family: Horsemen; font-weight: bold; src: url('Horsemen.otf');}
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Prompt:wght@500&family=Roboto+Condensed&display=swap');
 
+@font-face { 
+  font-family: 'Horsemen'; 
+  src: url('Horsemen.otf'); 
+} 
 
-
-
+@font-face { 
+  font-family: 'Horsemen'; 
+  font-weight: bold; 
+  src: url('Horsemen.otf'); 
+}
 
 :root {
   --primary-color: #a855f7;
@@ -32,7 +34,7 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -42,7 +44,7 @@ nav {
   left: 0;
   background-color: rgb(2, 3, 7);
   z-index: 99;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .nav__content {
@@ -52,7 +54,6 @@ nav {
   display: flex;
   align-items: left;
   justify-content: space-between;
-  font-family: "Oswald", sans-serif;
 }
 
 nav .logo a {
@@ -61,6 +62,7 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
@@ -72,6 +74,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -89,20 +92,18 @@ ul {
 ul li a {
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
-  text-decoration: none;
   font-weight: 600;
   color: white;
   transition: 0.3s;
 }
 
 ul li a:hover {
-  
   border-bottom-color: white;
   color: white;
 }
 
 .section {
-    background-image: linear-gradient(to bottom right, black, rgb(2, 3, 14));
+  background-image: linear-gradient(to bottom right, black, rgb(2, 3, 14));
 }
 
 .section__container {
@@ -146,7 +147,7 @@ ul li a:hover {
   line-height: 1.5rem;
   color: white;
   margin-bottom: 2rem;
-  font-family: 'Prompt', sans-serif;;
+  font-family: 'Prompt', sans-serif;
 }
 
 .action__btns {
@@ -193,7 +194,7 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-@media (width < 750px) {
+@media (max-width: 750px) {
   nav .checkbox {
     display: block;
   }
@@ -221,7 +222,7 @@ ul li a:hover {
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .image {
