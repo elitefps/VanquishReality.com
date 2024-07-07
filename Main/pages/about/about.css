@@ -248,3 +248,32 @@ ul li a:hover {
     margin: auto;
   }
 }
+.typing-effect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  text-align: center;
+}
+
+.typing-effect {
+  display: inline-block;
+  white-space: pre-wrap; /* Allow line breaks to be interpreted */
+  border-right: 0.15em solid orange;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem; /* Adjust as needed */
+  color: white;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: purple; }
+}
